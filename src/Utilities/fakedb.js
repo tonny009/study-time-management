@@ -5,15 +5,13 @@ const addToDb = (clickedtime, attribute) => {
     const Time = clickedtime;
     brkTimelist[attribute] = clickedtime;
     const finalStringified = JSON.stringify(brkTimelist);
-
-
     localStorage.setItem('BreakTime', finalStringified);
 }
 
 const getStoredCart = () => {
     let shoppingCart = {};
     //get the shopping cart from local storage
-    const storedCart = localStorage.getItem('shopping-cart');
+    const storedCart = localStorage.getItem('BreakTime');
     if (storedCart) {
         shoppingCart = JSON.parse(storedCart);
     }
