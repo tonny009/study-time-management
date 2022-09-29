@@ -7,6 +7,17 @@ import './Caculation.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+const firstToast = () => {
+    toast.success('🦄 Wow you have done for today!', {
+        position: "top-center",
+        autoClose: 4996,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+}
 
 const Calculation = (props) => {
     const { list } = props;
@@ -45,7 +56,7 @@ const Calculation = (props) => {
 
     }
 
-    const firstToast = () => { }
+
     return (
         <div className='calculation-part'>
             <Profile></Profile>
