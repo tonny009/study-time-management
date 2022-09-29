@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { addToDb, getStoredCart } from '../../Utilities/fakedb';
 import BreakTime from '../BreakTime/BreakTime';
 import Profile from '../ProfileSection/Profile';
 import './Caculation.css';
@@ -11,12 +12,30 @@ const Calculation = (props) => {
         totaltime = totaltime + readsubject.time;
     }
 
-
     //breake time showing-------------
     const [brkTime, setBrktime] = useState();
+
+    // useEffect(() => {
+    //     const storedbrktime = getStoredCart();
+
+    //     for (const id in storedCart) {
+    //         const addedProduct = products.find(product => product.id === id);
+    //         if (addedProduct) {
+    //             const quantity = storedCart[id];
+    //             addedProduct.quantity = quantity;
+    //             savedCart.push(addedProduct);
+
+    //         }
+    //     }
+    //     setCart(savedCart);
+    // }
+    //     , [products])
     const addBrkTime = (inputTime) => {
+        const attribute = 'Break Time';
         console.log(inputTime);
         setBrktime(inputTime);
+        addToDb(inputTime, attribute)
+
     }
     return (
         <div className='calculation-part'>
