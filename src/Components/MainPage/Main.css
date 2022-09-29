@@ -1,15 +1,30 @@
 .main-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
+    margin-top: 30px;
 }
 
 .subject-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
-    margin: 100px 50px;
+    margin: 30px 50px;
 }
 
 .calculation-container {
-    background-color: rgb(140, 195, 216);
+    background-color: rgb(131, 172, 189);
+}
+
+@media only screen and (max-width:888px) {
+    .main-container {
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .subject-container {
+        grid-template-columns: 4fr;
+        margin-left: 60px;
+    }
 }

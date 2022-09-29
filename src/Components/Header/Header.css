@@ -1,0 +1,27 @@
+.header {
+    background-color: rgb(178, 178, 236);
+    width: 1000px;
+    height: 50px;
+    margin-top: -10px;
+    margin-left: 50px;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-top: 8px;
+    text-align: left;
+    align-items: center;
+    border-radius: 4px;
+    font-size: large;
+
+}
+
+.header h3 {
+    margin: 0;
+    padding-top: 8px;
+}
+
+@media only screen and (max-width:888px) {
+    .header {
+        width: 520px;
+    }
+}

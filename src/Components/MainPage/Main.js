@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Calculation from '../Calculation/Calculation';
+import Header from '../Header/Header';
 import Subject from '../Subjec/Subject';
 import './Main.css';
 
@@ -36,10 +37,14 @@ const Main = () => {
     return (
 
         <div className='main-container'>
-            <div className='subject-container'>
-                {
-                    subjects.map(subject => <Subject subject={subject} key={subject.id} TimeAddtoList={TimeAddtoList}></Subject>)
-                }
+
+            <div>
+                <Header></Header>
+                <div className='subject-container'>
+                    {
+                        subjects.map(subject => <Subject subject={subject} key={subject.id} TimeAddtoList={TimeAddtoList}></Subject>)
+                    }
+                </div>
             </div>
             <div className='calculation-container'>
                 <Calculation list={list}></Calculation>
