@@ -28,3 +28,26 @@
     color: antiquewhite;
     font-size: 15px;
 }
+
+@media only screen and (max-width:888px) {
+    .calculation-part {
+        padding-left: 200px;
+    }
+
+    .complete-btn {
+        width: 200px;
+        height: 50px;
+        margin-left: -170px;
+    }
+
+    .total-time {
+        margin-top: 30px;
+    }
+
+    .time-show-section {
+        display: flex;
+        column-gap: 13px;
+        margin-left: -90px;
+    }
+
+}

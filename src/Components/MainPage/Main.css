@@ -24,7 +24,13 @@
     }
 
     .subject-container {
-        grid-template-columns: 4fr;
+        grid-template-columns: 1fr;
         margin-left: 60px;
+    }
+
+    .calculation-container {
+        width: 600px;
+
+        /* position: relative; */
     }
 }

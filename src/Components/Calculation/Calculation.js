@@ -45,12 +45,17 @@ const Calculation = (props) => {
         <div className='calculation-part'>
             <Profile></Profile>
             <BreakTime addBrkTime={addBrkTime}></BreakTime>
-            <div className='total-time'>
-                <p>Total Time : {totaltime}hrs</p>
+
+            <div className='time-show-section'>
+                <div className='total-time'>
+                    <p>Total Time : {totaltime}hrs</p>
+                </div>
+                <div className='total-time'>
+                    <p>Breake Time : {brkTime} mnt</p>
+                </div>
             </div>
-            <div className='total-time'>
-                <p>Breake Time : {brkTime} mnt</p>
-            </div>
+
+
             <div><button className='complete-btn'>Study Complete !</button></div>
 
         </div>
