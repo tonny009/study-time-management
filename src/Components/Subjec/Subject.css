@@ -1,0 +1,39 @@
+.each_subject_style {
+    width: 300px;
+    height: 490px;
+    border-radius: 8px;
+    border: 1px solid #95A0A7;
+    position: relative;
+    background-color: #e3e3e4;
+
+}
+
+.each_subject_style img {
+    width: 286px;
+    height: 266px;
+    border-radius: 8px;
+    margin: 7px;
+}
+
+.sub_info {
+    text-align: left;
+    margin: 0 14px;
+    margin-bottom: 0px;
+
+}
+
+.sub_info p {
+    margin-top: 5px;
+}
+
+.btn-add {
+    width: 100%;
+    height: 30px;
+    border-color: aliceblue;
+    border-radius: 8px;
+    bottom: 0;
+    position: relative;
+    background-color: rgb(130, 134, 196);
+    color: antiquewhite;
+    font-size: 15px;
+}

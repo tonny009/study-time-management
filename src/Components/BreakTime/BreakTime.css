@@ -1,0 +1,11 @@
+.break-container {
+    margin-top: 40px;
+}
+
+.brk-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: rgb(169, 169, 243);
+}

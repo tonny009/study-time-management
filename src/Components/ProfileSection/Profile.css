@@ -1,0 +1,30 @@
+.profile {
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+}
+
+.profile-box {
+    margin-right: 10px;
+    padding-top: 15px;
+    width: 50px;
+    background-color: rgb(197, 110, 110);
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid beige;
+    font-size: 20px;
+}
+
+.name-portion {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.name-portion p {
+    margin-top: 0px;
+}

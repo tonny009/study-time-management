@@ -1,0 +1,15 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.subject-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: 100px 50px;
+}
+
+.calculation-container {
+    background-color: rgb(140, 195, 216);
+}
