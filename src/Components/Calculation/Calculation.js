@@ -4,6 +4,9 @@ import BreakTime from '../BreakTime/BreakTime';
 import Profile from '../ProfileSection/Profile';
 import './Caculation.css';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Calculation = (props) => {
     const { list } = props;
@@ -41,6 +44,8 @@ const Calculation = (props) => {
         addToDb(inputTime, attribute)
 
     }
+
+    const firstToast = () => { }
     return (
         <div className='calculation-part'>
             <Profile></Profile>
@@ -56,7 +61,8 @@ const Calculation = (props) => {
             </div>
 
 
-            <div><button className='complete-btn'>Study Complete !</button></div>
+            <div><button onClick={firstToast} className='complete-btn'>Study Complete !</button></div>
+            <ToastContainer />
 
         </div>
 

@@ -32,7 +32,16 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.qstn-answr-container {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  text-align: justify;
+  margin: 50px;
 }
